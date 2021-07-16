@@ -1,12 +1,441 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    android:padding="30dp"
+    android:background="@drawable/bg2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.TransferFragment">
 
+    <TextView
+        android:layout_marginStart="20dp"
+        android:id="@+id/titleTranfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/e"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_marginLeft="20dp" />
 
-</LinearLayout>
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTranfer"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/d">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/wallet3"
+                        android:layout_width="30dp"
+                        android:layout_height="30sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/visa_"/>
+                    <TextView
+                        android:id="@+id/bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="United States Bank"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/wallet3"
+                        app:layout_constraintStart_toEndOf="@id/wallet3"
+                        app:layout_constraintTop_toTopOf="@+id/wallet3" />
+
+                    <TextView
+                        android:id="@+id/user1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="John Anderson"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/bank"
+                        app:layout_constraintTop_toBottomOf="@+id/bank" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:text="Account Number"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="@+id/wallet3"
+                        app:layout_constraintTop_toBottomOf="@+id/wallet3" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginLeft="100dp"
+                        android:text="7 7 * * * * 0 0"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                        app:layout_constraintStart_toEndOf="@+id/textView23"
+                        app:layout_constraintTop_toTopOf="@+id/textView23"
+                        app:layout_constraintVertical_bias="0.0" />
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Balance $12,000   02/25"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/mastercard"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toEndOf="@+id/textView43"
+                        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/gray">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/wallet14"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/visa_"/>
+
+                    <TextView
+                        android:id="@+id/bank2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="Union Bank"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/wallet14"
+                        app:layout_constraintStart_toEndOf="@id/wallet14"
+                        app:layout_constraintTop_toTopOf="@+id/wallet14" />
+
+                    <TextView
+                        android:id="@+id/user2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Adam Johnson"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/bank2"
+                        app:layout_constraintTop_toBottomOf="@+id/bank2" />
+
+                    <TextView
+                        android:id="@+id/textView214"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:text="Account Number"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="@+id/wallet14"
+                        app:layout_constraintTop_toBottomOf="@+id/wallet14" />
+
+                    <TextView
+                        android:id="@+id/textView314"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginLeft="100dp"
+                        android:text="8 9 * * * * 5 6"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView214"
+                        app:layout_constraintStart_toEndOf="@+id/textView214"
+                        app:layout_constraintTop_toTopOf="@+id/textView214"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView414"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Balance $1,687  08/28"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView214" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="152dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/mastercard"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toEndOf="@+id/textView414"
+                        app:layout_constraintTop_toBottomOf="@+id/textView314" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/mb1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/wallet25"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/visa_"/>
+
+                    <TextView
+                        android:id="@+id/bank3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="The Same Bank"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/wallet25"
+                        app:layout_constraintStart_toEndOf="@id/wallet25"
+                        app:layout_constraintTop_toTopOf="@+id/wallet25" />
+                    <TextView
+                        android:id="@+id/user3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Laura Smith"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/bank3"
+                        app:layout_constraintTop_toBottomOf="@+id/bank3" />
+
+                    <TextView
+                        android:id="@+id/textView225"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:text="Account Number"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="@+id/wallet25"
+                        app:layout_constraintTop_toBottomOf="@+id/wallet25" />
+
+                    <TextView
+                        android:id="@+id/textView325"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginLeft="100dp"
+                        android:text="9 5 * * * * 7 7"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView225"
+                        app:layout_constraintStart_toEndOf="@+id/textView225"
+                        app:layout_constraintTop_toTopOf="@+id/textView225"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView425"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Balance $1,900   09/31"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView225" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="152dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/mastercard"
+                        app:layout_constraintStart_toEndOf="@+id/textView425"
+                        app:layout_constraintTop_toBottomOf="@+id/textView325" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/horizontalScroll">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewtransfer7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Choose Transaction"
+                        android:textSize="20dp"
+                        android:textColor="@color/a"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textViewtransfer6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer Via"
+                        android:textColor="@color/a"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textViewtransfer7"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewtransfer7" />
+
+                    <TextView
+                        android:id="@+id/textViewtransfer8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="The Same Bank"
+                        android:textColor="@color/a"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.77"
+                        app:layout_constraintStart_toEndOf="@+id/textViewtransfer6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageViewtransfer3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/a"
+                        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textViewtransfer8"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_marginTop="350dp"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"/>
+
+</RelativeLayout>

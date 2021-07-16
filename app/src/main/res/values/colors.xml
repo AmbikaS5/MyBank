@@ -14,6 +14,18 @@
     <color name="e">#d95e1c</color>
     <color name="green">#369133</color>
     <color name="red">#eb4034</color>
+    <color name="gray">#696969</color>
+    <color name="gray1">#7D7D7D</color>
+    <color name="silver">#aaa9ad</color>
+    <color name="sil">#d2c</color>
+    <color name="f">#5b6467</color>
+    <color name="mb">#323334</color>
+    <color name="PURPLE">#7879FF</color>
+    <color name="mb1">#BFBFFF</color>
+    <color name="mb2">#00A6D7</color>
+    <color name="mb3">#0058B3</color>
+
+
 
 
 </resources>

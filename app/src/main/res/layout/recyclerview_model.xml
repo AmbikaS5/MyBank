@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Card__View"
+
+
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:layout_marginStart="10dp"
+android:layout_marginLeft="10dp"
+android:layout_marginTop="20dp"
+android:layout_marginEnd="10dp"
+android:layout_marginRight="10dp"
+    android:background="@color/c"
+app:cardCornerRadius="10dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/bank_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="110dp"
+            android:text="Choose Beneficiery"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/bank_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="25dp"
+            android:gravity="end"
+            android:text="John Anderson"
+            android:textColor="@color/a"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

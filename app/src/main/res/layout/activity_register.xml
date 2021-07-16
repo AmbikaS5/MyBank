@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/lspic"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/user"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+
+        android:hint="Enter Email Id"
+
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Phone No"
+        android:background="@drawable/rounded_button"
+        android:inputType="phone"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="195dp"
+        tools:ignore="MissingConstraints"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/psdw"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@drawable/rounded_button"
+
+
+        android:hint="Set Password"
+
+
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/confirmpad"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="@drawable/rounded_button"
+
+
+        android:hint="Confirm Password"
+
+
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/mb2"
+        android:onClick="secondPage"
+        android:text="Register"
+
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+
+
+
+</LinearLayout>

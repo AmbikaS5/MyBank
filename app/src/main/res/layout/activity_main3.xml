@@ -1,73 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+
     android:orientation="vertical"
-    tools:context=".MainActivity3">
+    android:background="@drawable/lspic"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Change_PasswordFragment">
+
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password"
-        android:textColor="@color/b"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         android:textSize="40dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="72dp" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="83dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/txt"
+        android:id="@+id/textView6"
         android:layout_margin="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Each payment process is very much smooth and fully secured"
-        android:gravity="center"
-        android:textColor="@color/black"
-
-
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-50dp"
-        tools:layout_editor_absoluteY="151dp" />
-
-    <EditText
-        android:id="@+id/editTextPhone2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="61dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <TextView
-        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resend?"
-        android:textColor="@color/black"
 
-        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Each payment process is very much smooth and fully secured"
+        android:textColor="@color/white"
+
+
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="283dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="177dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/editTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="30"
+            android:background="@drawable/rounded_button"
+            android:inputType="textPassword"
+            android:hint="Enter new Password"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="258dp"
+            tools:ignore="MissingConstraints" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Confirm New Password"
+            android:background="@drawable/rounded_button"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="327dp"
+            tools:ignore="MissingConstraints" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/but2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/b"
+        android:text="Change Password"
+        android:backgroundTint="@color/white"
         android:textColor="@color/black"
-        android:text="Next"
+        android:layout_margin="30dp"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="367dp" />
-
-
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="454dp"
+        tools:ignore="MissingConstraints" />
 </LinearLayout>

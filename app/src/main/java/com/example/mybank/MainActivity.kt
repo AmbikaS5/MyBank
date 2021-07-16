@@ -31,6 +31,16 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        var reg = findViewById<TextView>(R.id.reg)
+        reg.setOnClickListener {
+
+
+            val explicitintent = Intent(this, RegisterActivity::class.java)
+            startActivity(explicitintent)
+
+        }
+
+
 
     }
 }

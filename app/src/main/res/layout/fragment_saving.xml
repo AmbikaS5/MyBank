@@ -4,18 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/c"
+    android:background="@drawable/bg2"
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".fragments.SavingFragment">
-
     <TextView
         android:id="@+id/titleSaving"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Online Saving"
         android:textSize="30sp"
-        android:textColor="@color/white"
+        android:textColor="@color/e"
         android:textStyle="bold"
         android:fontFamily="sans-serif"
         app:layout_constraintStart_toStartOf="parent"
